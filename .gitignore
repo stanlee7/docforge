@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# PyInstaller 빌드 산출물
+build/
+dist/
+*.manifest
+
+# 생성/테스트 출력물 (더미 명단 xlsx는 커밋, 생성된 문서는 제외)
+samples/out/
+samples/exe_out/
+samples/exe_final/
+samples/exe_v3_*/
+samples/check_4b/
+samples/fix_out/
+samples/stress*/
+생성문서/
+_생성결과*.xlsx
+
+# OS
+Thumbs.db
+desktop.ini
