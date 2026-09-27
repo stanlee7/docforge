@@ -1,9 +1,20 @@
 # DocForge — 엑셀 행 → 개인별 AI 문서 일괄 생성
 
+> **명단 속 사람마다 성과평가서·안내문을 따로 써야 할 때, 엑셀 한 행을 문서 한 편으로 자동 작성합니다.**
+
 엑셀 명단의 **각 행을 한 편의 문서로** 자동 생성하는 온디바이스 무료 도구입니다.
 이름·직무·성과 같은 구조화 데이터를 넣으면, 로컬 LLM(Ollama + Gemma)이 **자연어 문서**(성과평가서 등)를 행마다 작성해 `.docx`로 떨어뜨립니다. 단순 `{{치환}}` 머지가 아니라 **데이터→산문 작문**이며, 인터넷 없이 완전 로컬에서 돌아갑니다(개인정보 외부 전송 0).
 
 > 자매 도구 **DocBatch**(문서 일괄 요약)의 온디바이스 엔진을 그대로 재사용하며, 모델도 공유합니다.
+
+## 사용 모습
+
+<!-- 사용 GIF 준비 중 -->
+
+## 내려받기
+
+- **[Windows 실행 파일 (Releases)](https://github.com/stanlee7/docforge/releases/latest)** — `DocForge-v1.0.0-win64.zip`
+- 소개 페이지: [docforge-kr.vercel.app](https://docforge-kr.vercel.app)
 
 ## 동작 방식
 1. 엑셀(첫 행=헤더, 예: `이름, 직무, 성과, 평가지표`)을 선택
@@ -46,3 +57,7 @@ powershell -ExecutionPolicy Bypass -File build.ps1   # -> dist\DocForge.exe
 
 ## 출력 형식
 `docx`(기본) · `txt` · `md`. (HWP는 미포함 — pyhwpx/COM 의존·한글 설치 필요로 v1 제외.)
+
+## 우리 팀에 도입·교육이 필요하면
+
+에이전엘은 기업·기관 AI 교육과 AX 업무 도구 구축을 합니다. 이 도구를 팀 업무에 맞게 적용하거나 사용 교육이 필요하면 → [에이전엘 견적 요청](https://agenaile.com/?utm_source=github&utm_medium=readme&utm_campaign=tools&utm_content=docforge#quote)
